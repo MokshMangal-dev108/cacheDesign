@@ -1,0 +1,1 @@
+This Cache system is designed with all **SOLID principles**, ensuring clean, maintainable, and extensible code. Each component has a clear responsibility, supports extensibility, and promotes reusability.
