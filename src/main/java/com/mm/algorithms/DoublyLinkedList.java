@@ -59,7 +59,7 @@ public class DoublyLinkedList<E> {
      * @return Reference to new node created for the element.
      */
     public DoublyLinkedListNode<E> addElementAtLast(E element){
-        if(element!=null){
+        if(element==null){
             throw new InvalidElementException();
         }
         DoublyLinkedListNode<E> newNode = new DoublyLinkedListNode<>(element);

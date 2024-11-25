@@ -13,18 +13,26 @@ public class Main {
         int capacity = sc.nextInt();
 
         Cache<Integer,Integer> cache = new CacheFactory<Integer,Integer>().defaultCache(capacity);
-
+        System.out.print("Enter new Commnd ");
         String str = sc.next().trim();
         while(!str.equalsIgnoreCase("exit")){
             if(str.equalsIgnoreCase("add")){
+                System.out.print("Enter Key:- ");
                 int key = sc.nextInt();
+                System.out.print("Enter Value:- ");
                 int value = sc.nextInt();
                 cache.put(key,value);
-            }else{
+                System.out.println("Element added successfully");
+            }else if(str.equalsIgnoreCase("get")){
+                System.out.print("Enter Key:- ");
                 int key = sc.nextInt();
-                System.out.println("The value is.... ");
+                System.out.print("The value is.... ");
                 System.out.println(cache.get(key));
+                System.out.println("Element retrived successfully");
+            }else{
+                System.out.println("Only 2 commands Get and Put is Supported");
             }
+            System.out.println("Enter new Command");
             str = sc.next().trim();
         }
         System.out.println("Program terminated successfully");
